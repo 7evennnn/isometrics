@@ -97,24 +97,34 @@ h1, p {
   margin-top: 30px;
 }
 
-.big-button {
+/* ====== WELCOME PAGE RECTANGLE BUTTONS ====== */
+
+.button-row {
+  margin-top: 30px;
+}
+
+.welcome-button {
   display: inline-block;
-  padding: 14px 26px;
+  padding: 14px 22px;
   margin-right: 15px;
 
-  background: linear-gradient(135deg, #bde0fe, #cdb4db);
+  background-color: #bde0fe; /* pastel cyan */
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 30px;
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px; /* rectangle, slightly rounded */
+  border: 2px solid #cdb4db; /* pastel purple */
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 /* Hover effect */
-.big-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.welcome-button:hover {
+  background-color: #cdb4db; /* pastel purple */
+  transform: translateY(-2px);
 }
+
+
 
 
