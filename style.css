@@ -161,6 +161,24 @@ h1, p {
   background: linear-gradient(135deg, #00c6ff, #0072ff);
 }
 
+.content-row {
+  display: flex;
+  gap: 30px;
+}
+
+.main-text {
+  flex: 2;
+}
+
+.side-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+
+
 
 
 
