@@ -1,39 +1,93 @@
+/* ====== GENERAL PAGE STYLES ====== */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+
+  /* Pastel moving gradient */
+  background: linear-gradient(
+    -45deg,
+    #cdb4db,
+    #bde0fe,
+    #a2d2ff,
+    #ffc8dd
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+
+  min-height: 100vh;
 }
+
+/* This makes the gradient move */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ====== NAVBAR ====== */
 
 .navbar {
-  background-color: #333;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
   padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 30px;
 }
 
-.navbar a, .dropbtn {
-  color: white;
-  padding: 10px;
+.navbar a,
+.dropbtn {
+  color: #3a3a3a;
+  padding: 10px 14px;
   text-decoration: none;
   display: inline-block;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+/* Hover effect */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background: rgba(255, 255, 255, 0.5);
 }
+
+/* ====== DROPDOWN ====== */
 
 .dropdown {
   display: inline-block;
+  position: relative;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444;
+  background: rgba(255, 255, 255, 0.85);
+  min-width: 140px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .dropdown-content a {
   display: block;
+  color: #333;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* ====== TEXT BOX STYLE ====== */
+
+h1, p {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  max-width: 800px;
 }
