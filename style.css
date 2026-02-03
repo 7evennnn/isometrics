@@ -5,13 +5,11 @@ body {
   margin: 0;
   padding: 20px;
 
-  /* Pastel moving gradient */
+  /* Pastel purple + cyan moving gradient */
   background: linear-gradient(
     -45deg,
     #cdb4db,
-    #bde0fe,
-    #a2d2ff,
-    #ffc8dd
+    #bde0fe
   );
   background-size: 400% 400%;
   animation: gradientMove 15s ease infinite;
@@ -19,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-/* This makes the gradient move */
+/* Gradient animation */
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -91,27 +89,19 @@ h1, p {
   border-radius: 15px;
   max-width: 800px;
 }
-/* ====== WELCOME PAGE BUTTONS ====== */
 
-.button-row {
-  margin-top: 30px;
-}
-
-/* ====== WELCOME PAGE RECTANGLE BUTTONS ====== */
-
-.button-row {
-  margin-top: 30px;
-  text-align: center;
-}
-
-
-/* ====== FANCY GRADIENT BUTTONS ====== */
+/* ====== WELCOME PAGE BUTTON ROW ====== */
 
 .button-row {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* Base button */
+/* ====== FANCY GRADIENT BUTTONS ====== */
+
 .fancy-button {
   display: inline-flex;
   align-items: center;
@@ -119,13 +109,12 @@ h1, p {
 
   width: 220px;
   padding: 14px 16px;
-  margin-right: 20px;
 
   text-decoration: none;
   font-weight: bold;
   color: white;
 
-  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  background: linear-gradient(135deg, #cdb4db, #bde0fe);
   border-radius: 999px;
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -156,10 +145,12 @@ h1, p {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Cyan version */
+/* Optional cyan emphasis version */
 .fancy-button.cyan {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #bde0fe, #a2d2ff);
 }
+
+/* ====== TWO-COLUMN LAYOUT ====== */
 
 .content-row {
   display: flex;
@@ -176,16 +167,9 @@ h1, p {
   padding: 15px;
   border-radius: 15px;
 }
+
+/* ====== MULTI-LINE PARAGRAPHS ====== */
+
 p {
   white-space: pre-line;
 }
-
-
-
-
-
-
-
-
-
-
