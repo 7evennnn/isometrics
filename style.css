@@ -5,11 +5,13 @@ body {
   margin: 0;
   padding: 20px;
 
-  /* Pastel purple + cyan moving gradient */
+/* Pastel moving gradient */
   background: linear-gradient(
     -45deg,
     #cdb4db,
-    #bde0fe
+    #bde0fe,
+    #a2d2ff,
+    #ffc8dd
   );
   background-size: 400% 400%;
   animation: gradientMove 15s ease infinite;
@@ -17,7 +19,7 @@ body {
   min-height: 100vh;
 }
 
-/* Gradient animation */
+/* This makes the gradient move */
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -173,3 +175,4 @@ h1, p {
 p {
   white-space: pre-line;
 }
+
