@@ -243,6 +243,56 @@ p {
     }
 
 
+    .page-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* The main "Big Box" */
+    .master-container {
+        width: 100%;
+        max-width: 1000px; /* PC Width */
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 30px;
+        padding: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between the smaller internal boxes */
+        box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    }
+
+    /* The "Smaller Boxes" inside */
+    .content-card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    }
+
+    /* Specific adjustment for the text-heavy card */
+    .text-left {
+        text-align: left;
+        line-height: 1.7;
+    }
+
+    /* Mobile responsiveness fix */
+    @media (max-width: 600px) {
+        .master-container {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        h1 { font-size: 1.5rem; }
+    }
+
+
 
 
 
