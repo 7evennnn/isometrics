@@ -194,6 +194,32 @@ p {
   white-space: pre-line;
 }
 
+.main-box {
+  max-width: 1000px;   /* ← this controls the width */
+  margin: 60px auto;   /* centers it */
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+
+.main-box h1,
+.main-box p {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.main-box p {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 16px 20px;
+  border-radius: 18px;
+  margin: 16px 0;
+}
+
+
+
 
 
 
