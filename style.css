@@ -3,7 +3,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  
 
 /* Pastel moving gradient */
   background: linear-gradient(
@@ -196,7 +196,7 @@ p {
 
 .main-box {
   max-width: 1000px;   /* ← this controls the width */
-  margin: 60px auto;   /* centers it */
+  margin: 40px auto;   /* centers it */
   padding: 40px;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 25px;
@@ -217,6 +217,7 @@ p {
   border-radius: 18px;
   margin: 16px 0;
 }
+
 
 
 
