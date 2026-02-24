@@ -18,21 +18,78 @@
 
   
 
- <div class="main-box">
-    <h1 class="text-center"; style="font-size: 3rem; margin-bottom: 10px">Welcome to isometrics.fun</h1>
-    <p class="text-center"; style="color: #555; margin-top: 10px;"><em>Holding the line when the gym is out of reach.</em></p>
+  <div class="main-box hero">
 
+    <h1>Holding the line when the gym is out of reach.</h1>
 
-    <p class="text-center"; style="font-size: 1.75rem; font-weight: bold;">Here, I provide information about isometrics, which you can use for your own training.</p>
-      <p style="font-size: 1.25rem"><strong>Isometric training</strong> involves producing force against an immovable position, where the muscle contracts without visible joint movement. This site is a dedicated resource for those who cannot train normally, including <strong>military personnel, individuals recovering from injury, or those under severe time and equipment constraints</strong>.</p>
-     
-      <p style="font-size: 1.25rem">When lifting is impractical, isometrics offer a science-based approach to maintaining muscle and strength.
-      
-          <em>Note:</em> This is a tool for maintenance, not a primary driver for maximum hypertrophy. 
-         While conventional resistance training remains the superior option for peak gym performance, isometrics ensure you don't lose progress when the gym is out of reach.
+    <div class="info-card">
+      <h2>What is Isometric Training?</h2>
+      <p>
+        There are two types of isometrics. Here, we focus on 
+        <strong>overcoming isometrics</strong>.
       </p>
-      <p style="font-size: 1.25rem">To get started, check out any of these buttons below!</p>
+    </div>
+
   </div>
+
+
+  <div class="svg-section">
+
+    <div class="svg-card">
+
+      <svg id="isoSVG" width="400" height="200" viewBox="0 0 400 200">
+
+        <!-- Desk -->
+        <rect x="50" y="100" width="300" height="20" fill="#444" />
+
+        <!-- Arm -->
+        <rect id="arm" x="180" y="40" width="40" height="60" rx="10" fill="#ffccaa" />
+
+        <!-- Hand -->
+        <rect id="hand" x="180" y="90" width="40" height="15" rx="5" fill="#ffb899" />
+
+      </svg>
+
+      <p id="isoText" class="hidden-text">
+        Overcoming isometrics involves producing force against an immovable position,
+        where the muscle contracts without visible joint movement.
+      </p>
+
+  </div>
+
+  </div>
+
+  <div class="audience-section">
+
+    <h2>Who Is This For?</h2>
+
+    <div class="card-grid">
+
+      <div class="audience-card">
+        <h3>Military Personnel</h3>
+        <p>Maintain strength in constrained or deployment environments.</p>
+      </div>
+
+      <div class="audience-card">
+        <h3>Injury Recovery</h3>
+        <p>Train safely while protecting healing joints.</p>
+      </div>
+
+      <div class="audience-card">
+        <h3>Time-Crunched Professionals</h3>
+        <p>Preserve strength when schedules eliminate gym access.</p>
+      </div>
+
+      <div class="audience-card">
+        <h3>High-Constraint Environments</h3>
+        <p>Minimal equipment. Maximum intent.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
 
 
   
@@ -48,10 +105,32 @@
     </a>
   </div>
 
+  <script>
+    const arm = document.getElementById("arm");
+    const text = document.getElementById("isoText");
+
+    let activated = false;
+
+    document.querySelector(".svg-card").addEventListener("mouseenter", () => {
+      if (activated) return;
+
+      activated = true;
+
+      arm.style.transition = "transform 0.6s ease";
+      arm.style.transform = "translateY(10px)";
+
+      setTimeout(() => {
+        text.classList.add("show-text");
+      }, 2000);
+    });
+  </script>
+
+
 
 
 </body>
 </html>
+
 
 
 
