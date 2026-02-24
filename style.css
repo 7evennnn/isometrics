@@ -254,6 +254,110 @@ p {
 
 
 
+/* ====== the major rehaul*/
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.info-card {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.svg-section {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.svg-card {
+  text-align: center;
+  padding: 40px;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.svg-card:hover {
+  transform: translateY(-5px);
+}
+
+.hidden-text {
+  opacity: 0;
+  margin-top: 30px;
+  transition: opacity 1s ease;
+}
+
+.show-text {
+  opacity: 1;
+}
+
+.audience-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.audience-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.audience-card:hover {
+  transform: translateY(-8px);
+}
+
+.audience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.audience-card:hover::before {
+  left: 120%;
+}
+
+.disclaimer {
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffdddd;
+  color: #900;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.disclaimer:hover {
+  font-style: italic;
+}
+
 
 
 
